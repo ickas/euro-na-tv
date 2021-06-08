@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #212121;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+h1 a {
+  border-width: 5px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+div#wrapper a {
+  border-bottom: 2px solid #212121;
+  color: #212121;
+  text-decoration: none;
+  transition-duration: .3s;
+}
+
+div#wrapper a:hover {
+  border-color: #78909C;
+  color: #78909C;
+}
+
+div.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 0.5rem;
+}
+
+div.cal-grid.wide {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+div.cal-grid > div {
+  border-radius: 10px;
+  background-color: #FAFAFA;
+  padding: 1rem;
+  transition-duration: .3s;
+}
+
+div.cal-grid > div:hover {
+  background-color: #EEEEEE;
+}
+
+div.cal-grid:not(:last-child) {
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #E0E0E0;
+  padding-bottom: 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+ul li span {
+  color: #78909C;
+}
+
+.time {
+  margin-right: 0.5rem;
+}
+
+.match {
+  font-size: 1.5rem;
+}
+
+.channel {
+  margin-left: 0.5rem;
+}
+
+footer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: .75rem;
+  text-align: center;
+}
+
+footer a {
+  color: #78909C;
+  text-decoration: none;
+  transition-duration: .3s;
+}
+
+footer a:hover {
+  color: #212121;
+}
+
+footer > *:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
